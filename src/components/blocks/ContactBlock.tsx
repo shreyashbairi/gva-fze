@@ -11,7 +11,7 @@ import {
   CardHeader,
   CardTitle,
   CardDescription,
-  CardContent
+  CardContent,
 } from "../ui/Card";
 import { Callout } from "../ui/Callout";
 
@@ -52,7 +52,9 @@ export function ContactBlock() {
       setIsSubmitted(true);
     } catch (err) {
       console.log(err);
-      setError("We couldn't send your message. Please check your connection or try again later.");
+      setError(
+        "We couldn't send your message. Please check your connection or try again later.",
+      );
     } finally {
       setIsSubmitting(false);
     }
@@ -62,12 +64,14 @@ export function ContactBlock() {
     <div className="bg-white py-16 sm:py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 max-w-5xl mx-auto items-stretch">
-
           <Card className="h-full flex flex-col bg-gray-50 border-transparent shadow-sm">
             <CardHeader>
-              <CardTitle className="text-2xl text-primary uppercase">Get in Touch</CardTitle>
+              <CardTitle className="text-2xl text-primary uppercase">
+                Get in Touch
+              </CardTitle>
               <CardDescription className="text-base">
-                Reach out using the form, or contact us directly using the information below.
+                Reach out using the form, or contact us directly using the
+                information below.
               </CardDescription>
             </CardHeader>
             <CardContent className="space-y-8 pt-4 flex-1">
@@ -77,7 +81,9 @@ export function ContactBlock() {
                 </div>
                 <div>
                   <Text className="font-semibold text-primary">Email Us</Text>
-                  <Text className="text-gray-600 mt-1">commercial@gva-fze.com</Text>
+                  <Text className="text-gray-600 mt-1">
+                    commercial@gva-fze.com
+                  </Text>
                 </div>
               </div>
               <div className="flex items-start space-x-4">
@@ -95,7 +101,11 @@ export function ContactBlock() {
                 </div>
                 <div>
                   <Text className="font-semibold text-primary">Visit Us</Text>
-                  <Text className="text-gray-600 mt-1">2605 Jumeirah Bay X3 Tower<br />Dubai, UAE</Text>
+                  <Text className="text-gray-600 mt-1">
+                    Jumeirah Tower
+                    <br />
+                    Dubai, UAE
+                  </Text>
                 </div>
               </div>
             </CardContent>
@@ -103,7 +113,9 @@ export function ContactBlock() {
 
           <Card className="h-full flex flex-col border-gray-200 shadow-md">
             <CardHeader>
-              <CardTitle className="text-2xl uppercase text-primary">Send a Message</CardTitle>
+              <CardTitle className="text-2xl uppercase text-primary">
+                Send a Message
+              </CardTitle>
               <CardDescription className="text-base">
                 Fill out the fields below and we will get back to you shortly.
               </CardDescription>
@@ -123,11 +135,22 @@ export function ContactBlock() {
                   <input type="hidden" name="bot-field" />
                   <div className="space-y-2">
                     <Label htmlFor="user_name">Full Name</Label>
-                    <Input id="user_name" name="user_name" placeholder="John Doe" required />
+                    <Input
+                      id="user_name"
+                      name="user_name"
+                      placeholder="John Doe"
+                      required
+                    />
                   </div>
                   <div className="space-y-2">
                     <Label htmlFor="user_email">Email Address</Label>
-                    <Input id="user_email" name="user_email" type="email" placeholder="john@example.com" required />
+                    <Input
+                      id="user_email"
+                      name="user_email"
+                      type="email"
+                      placeholder="john@example.com"
+                      required
+                    />
                   </div>
                   <div className="space-y-2 flex-1 flex flex-col">
                     <Label htmlFor="message">Message</Label>
@@ -169,18 +192,24 @@ export function ContactBlock() {
                   <div className="h-20 w-20 bg-primary/10 rounded-full flex items-center justify-center mb-6">
                     <CheckCircle2 className="h-12 w-12 text-primary" />
                   </div>
-                  <Heading level={3} className="mb-2">Message Sent!</Heading>
+                  <Heading level={3} className="mb-2">
+                    Message Sent!
+                  </Heading>
                   <Text className="text-gray-600 max-w-xs mx-auto">
-                    Thank you for reaching out. We will get back to you within 24 hours.
+                    Thank you for reaching out. We will get back to you within
+                    24 hours.
                   </Text>
-                  <Button variant="outline" className="mt-8" onClick={() => setIsSubmitted(false)}>
+                  <Button
+                    variant="outline"
+                    className="mt-8"
+                    onClick={() => setIsSubmitted(false)}
+                  >
                     Send another message
                   </Button>
                 </div>
               )}
             </CardContent>
           </Card>
-
         </div>
       </div>
     </div>
