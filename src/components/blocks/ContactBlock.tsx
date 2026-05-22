@@ -92,7 +92,7 @@ export function ContactBlock() {
                 </div>
                 <div>
                   <Text className="font-semibold text-primary">Call Us</Text>
-                  <Text className="text-gray-600 mt-1">+1 (555) 123-4567</Text>
+                  <Text className="text-gray-600 mt-1">+971 (58) 899-5410</Text>
                 </div>
               </div>
               <div className="flex items-start space-x-4">
