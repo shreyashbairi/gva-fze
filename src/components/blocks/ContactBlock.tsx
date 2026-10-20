@@ -81,9 +81,7 @@ export function ContactBlock() {
                 </div>
                 <div>
                   <Text className="font-semibold text-primary">Email Us</Text>
-                  <Text className="text-gray-600 mt-1">
-                    commercial@gva-fze.com
-                  </Text>
+                  <Text className="text-gray-600 mt-1">office@gva-fze.com</Text>
                 </div>
               </div>
               <div className="flex items-start space-x-4">
